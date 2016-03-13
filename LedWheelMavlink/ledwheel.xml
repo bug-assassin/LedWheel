@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<mavlink>
+     <version>3</version>
+     <messages>		  
+		  <message id="0" name="SET_RGB">
+			<description>Set rgb value in matrix</description>
+			<field type="uint8_t" name="led_number"></field>
+			<field type="uint8_t[36]" name="led_strip_colors"></field>
+		  </message>
+		  <message id="1" name="angle">
+			  <description>Gets led wheel angle</description>
+			  <field type="float" name="angle"></field>
+		  </message>
+     </messages>
+</mavlink>
